@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .todo-list {
+    width: 100% !important;
+  }
+}
+
+.todos {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: url('./media/blob.svg') no-repeat center center / cover;
+}
+.todo-form {
+  text-align: center;
+}
+.todo-form button,
+.todo-form input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.todo-form button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.todo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: white;
+}
+.todo .task-info {
+  display: flex;
+  gap: 1rem;
+  overflow-wrap: break-word;
+  width: 100%;
+  align-items: center;
+}
+.todo .task-info input {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30px;
+}
+.todo button {
+  padding: 0.1rem 0.5rem;
+  margin-left: 10px;
+}
+.todo svg {
+  cursor: pointer;
+}
+.done p {
+  opacity: 0.6;
+  color: rgb(148, 247, 153) !important;
+}
+
+.todo-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  overflow-y: scroll;
+  align-items: center;
+}

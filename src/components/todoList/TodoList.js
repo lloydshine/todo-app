@@ -3,7 +3,7 @@ import { Todo } from '../';
 
 export default function TodoList({ todos, setTodos }) {
   const handleRemove = (toRemoved) => {
-    setTodos(todos.filter((todo) => todo.task != toRemoved.task));
+    setTodos(todos.filter((todo) => todo.task !== toRemoved.task));
   };
   const toggleTodo = (toToggle) => {
     const updatedTodos = todos.map((todo) =>
